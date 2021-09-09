@@ -270,6 +270,9 @@ pre code {
   .post-container ol {
     padding-left: 30px;
   }
+  .navbar-custom .navbar-brand img {
+    width: 120px;
+  }
 }
 @media screen and (max-width: 500px) {
   .post-container ul,
@@ -980,6 +983,21 @@ img::-moz-selection {
   height: auto;
   margin: 1.5em auto 1.6em auto;
 }
+.post-container ul {
+  display: contents;
+}
+.post-container:first-child>ul>li {
+  list-style: none;
+}
+.post-container:first-child>ul>li>a {
+  font-weight: bold;
+}
+.post-container:first-child>ul>li>i {
+  margin-left: -14px;
+  margin-right: 5px;
+  font-style: inherit;
+}
+
 /* Hux Optimize UserExperience */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
@@ -1088,4 +1106,7 @@ img::-moz-selection {
 }
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
+}
+.backtotop {
+  float: right;
 }
